@@ -16,7 +16,7 @@ module.exports = {
             methods: ["GET", "POST", "PUT", "DELETE"],
             credentials: true,
          },
-         transports: ["websocket", "polling"], 
+         transports: ["websocket"], 
       });
       return io;
    },
