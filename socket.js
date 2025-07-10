@@ -1,4 +1,4 @@
-const { Server } = require("socket.io"); 
+const { Server } = require("socket.io");
 
 let io;
 
@@ -12,11 +12,12 @@ module.exports = {
                "http://54.254.177.24:3000",
                "http://54.254.177.24:3001",
                "https://famous-hotteok-6fb3ad.netlify.app",
+               "https://686f7c25e3957f0008ed14db--famous-hotteok-6fb3ad.netlify.app",
             ],
             methods: ["GET", "POST", "PUT", "DELETE"],
             credentials: true,
          },
-         transports: ["websocket"], 
+         transports: ["websocket"],
       });
       return io;
    },
