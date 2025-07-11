@@ -24,20 +24,21 @@ const MONGO_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_P
 
 // Middleware
 app.use(
-   cors({
-      origin: [
-      "http://localhost:3000",
-      "http://localhost:3001",
-      "http://54.254.177.24:3000",
-      "http://54.254.177.24:3001",
-      "https://famous-hotteok-6fb3ad.netlify.app",
-      "https://686f7c25e3957f0008ed14db--famous-hotteok-6fb3ad.netlify.app",
-      "https://soft-praline-a96359.netlify.app",
-      "https://687083d34771cc5a8a51a00b--soft-praline-a96359.netlify.app",
-   ],
-      methods: ["GET", "POST", "PUT", "DELETE"],
-      credentials: true,
-   })
+   cors()
+   // cors({
+      // origin: [
+      // "http://localhost:3000",
+      // "http://localhost:3001",
+      // "http://54.254.177.24:3000",
+      // "http://54.254.177.24:3001",
+      // "https://famous-hotteok-6fb3ad.netlify.app",
+      // "https://686f7c25e3957f0008ed14db--famous-hotteok-6fb3ad.netlify.app",
+      // "https://soft-praline-a96359.netlify.app",
+      // "https://687083d34771cc5a8a51a00b--soft-praline-a96359.netlify.app",
+   // ],
+   //    methods: ["GET", "POST", "PUT", "DELETE"],
+   //    credentials: true,
+   // })
 );
 app.use(express.json());
 app.use(
