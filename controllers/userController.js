@@ -88,7 +88,7 @@ exports.postLogin = async (req, res) => {
       // Thêm cookie
       res.cookie("userId", user._id, {
          httpOnly: false,
-         sameSite: "Lax",
+         sameSite: "None",
          secure: true,
          maxAge: 24 * 60 * 60 * 1000,
       });

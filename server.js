@@ -51,6 +51,7 @@ app.use(
          maxAge: 24 * 60 * 60 * 1000, // 1 ngày
          httpOnly: true,
          secure: true,
+         sameSite: "None",
       },
    })
 );
